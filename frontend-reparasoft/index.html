@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReparaSoft Web</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <template id="print-template">
+  <html>
+    <head>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          color: #000;
+        }
+        .logo {
+          width: 150px;
+        }
+        h1 {
+          text-align: center;
+          margin-top: 0;
+        }
+        .campo {
+          margin-bottom: 5px;
+        }
+        .item {
+          margin-left: 20px;
+          margin-bottom: 10px;
+        }
+        .policy {
+          font-size: 0.85em;
+          margin-top: 30px;
+          padding-top: 15px;
+          border-top: 1px solid #999;
+        }
+      </style>
+    </head>
+    <body>
+      
+        <!-- Encabezado con logo y título -->
+        <div style="text-align: center; margin-bottom: 30px;">
+          <img src="/logo-setip.png" alt="SETIP INFORMÁTICA" style="height: 80px; margin-bottom: 10px;" />
+          <h1 style="font-size: 28px; font-weight: bold;">Orden de Reparación #{numero}<span id="orden-id"></span></h1>
+        </div>
+
+
+     
+
+      <div class="campo"><b>Fecha:</b> {fecha}</div>
+      <div class="campo"><b>Cliente:</b> {cliente}</div>
+      <div class="campo"><b>DNI:</b> {dni}</div>
+      <div class="campo"><b>Teléfono:</b> {telefono}</div>
+      <div class="campo"><b>Email:</b> {email}</div>
+      <div class="campo"><b>Marca:</b> {marca}</div>
+      <div class="campo"><b>Modelo:</b> {modelo}</div>
+      <div class="campo"><b>Patente:</b> {patente}</div>
+      <div class="campo"><b>Kms:</b> {kms}</div>
+      <div class="campo"><b>Serie:</b> {serie}</div>
+      <div class="campo"><b>Accesorios:</b> {accesorios}</div>
+      <div class="campo"><b>Problema:</b> {problema}</div>
+      <div class="campo"><b>Estado de reparación:</b> {estado}</div>
+      <div class="campo"><b>Comentarios:</b> {comentarios}</div>
+
+      <h3>Productos / Servicios:</h3>
+      {items_html}
+
+      <div class="policy">
+        <h4>Política de Presupuestos y Retiro de Equipos – SETIP INFORMÁTICA</h4>
+        <p>De acuerdo con la legislación vigente en Argentina y conforme a nuestras políticas internas de operación, se establece lo siguiente:</p>
+        <ul>
+          <li><b>Plazo para aceptar o rechazar el presupuesto:</b> Una vez emitido y comunicado el presupuesto correspondiente al diagnóstico y/o reparación de un equipo, el cliente dispone de un plazo de 3 (tres) días corridos para aceptarlo o rechazarlo. En caso de no obtener respuesta en dicho plazo, SETIP INFORMÁTICA se reserva el derecho de considerar el presupuesto como no aceptado.</p>
+          <li><b>Plazo para retiro de equipos no reparados:</b> Si el presupuesto no es aceptado, o bien el cliente decide no avanzar con la reparación, se otorga un plazo máximo de 15 (quince) días corridos para el retiro del equipo por parte del cliente; transcurrido dicho plazo sin que se efectúe el retiro, el equipo será considerado abandonado o en estado de pérdida, habilitando a SETIP INFORMÁTICA a disponer libremente del mismo, ya sea para su reciclado, donación, desguace o cualquier otro destino que se considere pertinente, sin derecho a reclamo posterior por parte del cliente.</li>
+          </li>
+          
+        </ul>
+      </div>
+    </body>
+  </html>
+</template>
+
+  </body>
+  
+</html>

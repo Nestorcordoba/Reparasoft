@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-black min-h-screen;
+  font-family: 'Segoe UI', sans-serif;
+  
+  
+}
+
+
+
+h1, h2, h3 {
+  @apply text-cyan-700 font-bold mb-4;
+}
+
+form {
+  @apply bg-white p-6 rounded-lg shadow-lg;
+}
+
+input, textarea {
+  @apply w-full p-3 bg-white text-black placeholder-gray-500 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500;
+}
+
+button {
+  @apply bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-6 py-2 rounded mt-2;
+}
+
+nav {
+  @apply bg-white text-black shadow-md p-4 flex items-center gap-6;
+}
+
+nav a {
+  @apply hover:text-cyan-700 font-medium;
+}
+
+nav img {
+  @apply h-10 mr-2;
+}
+
+ul li {
+  @apply bg-gray-100 p-4 rounded-md shadow text-black;
+}
+
+/* NUEVO: resaltar nombres de campo */
+.campo-label {
+  @apply font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded shadow-sm;
+}
+
+/* NUEVO: alternar color de fondo para registros */
+.orden-par {
+  @apply bg-gray-100 border border-gray-300 rounded-lg p-4 shadow-sm;
+}
+
+.orden-impar {
+  @apply bg-gray-200 border border-gray-300 rounded-lg p-4 shadow-sm;
+}
+
+.historial-comentarios {
+  background-color: #e0dedd00;
+  color: #151111;
+  font-size: 0.9rem;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+  min-height: 100px;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Centrar el logo vertical y horizontalmente en Inicio */
+.logo-inicio-container {
+  @apply flex flex-col items-center justify-center min-h-screen text-center bg-white;
+}
+
+.logo-inicio-img {
+  @apply w-80 max-w-full h-auto mb-6;
+}
+
+
